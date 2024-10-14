@@ -17,7 +17,7 @@ if($_SERVER ["REQUEST_METHOD"] == "POST"){
 
 
     $host = "localhost";
-$database = "ecommerceb2";
+$database = "ecommerce";
 $dbusername = "root";
 $dbpassword = "";
 
@@ -52,15 +52,15 @@ try {
   }
 
    }
-  
+ 
   //CONNECT DATABASE
   //INSERT RECORD
 
 
-    
+   
 
 
-  
+ 
 
 
   /*}else{
