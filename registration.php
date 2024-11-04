@@ -1,6 +1,8 @@
 <?php 
 session_start();
-require_once("includes/header.php");
+require_once(__DIR__."/app/config/Directories.php"); 
+require_once(ROOT_DIR."includes/header.php");
+
 if(isset($_SESSION["error"])){
     $messErr = $_SESSION["error"];
     unset($_SESSION["error"]);
@@ -40,7 +42,7 @@ if(isset($_SESSION["success"])){
                         </div>
                         <?php } ?>
 
-                        <form action="app/auth/register.php" method="POST">
+                        <form action="app/auth/Register.php" method="POST">
                             <div class="mb-3">
                                 <label for="fullname" class="form-label">Full Name</label>
                                 <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter your full name" required>
@@ -70,4 +72,4 @@ if(isset($_SESSION["success"])){
         </div>
     </div>
 
-    <?php require_once("includes/footer.php")?>
+    <?php require_once(ROOT_DIR."includes/footer.php"); ?>
