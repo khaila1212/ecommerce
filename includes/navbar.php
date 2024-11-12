@@ -29,8 +29,8 @@
                     </li>
 
                      <!-- Dropdown for Signed-in User -->
-                      <?php if(isset($_SESSION["fullname"])){ ?>
-                     <li class="nav-item dropdown">
+                    <?php if(isset($_SESSION["fullname"])){ ?>
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <?php echo $_SESSION["fullname"]; ?>
                         </a>
@@ -39,7 +39,7 @@
                             <li><a class="dropdown-item" href="profile.html">Profile</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
-                                <form action="/logout.php" method="POST">
+                                <form action=<?php echo BASE_URL; ?>"logout.php" method="POST">
                                 <button class="dropdown-item">Logout</button>
                                 </form>
                             </li>

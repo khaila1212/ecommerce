@@ -7,7 +7,7 @@ require_once(ROOT_DIR."includes/header.php");
 ?>
 
     <!-- Navbar -->
-       <?php require_once("includes/navbar.php")?>
+       <?php require_once(ROOT_DIR."includes/navbar.php")?>
 
 
     <!-- Hero Section -->
