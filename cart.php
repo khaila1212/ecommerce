@@ -7,7 +7,7 @@
     $conn = $db->connectDB();
 
     $carts= [];
-    $userId =$_SESSION["user_id"];
+    $userId =$_SESSION["user_id"] ?? header('location: login.php');
     $subtotal = 0;
     $purchaseTotal = 0;
    

@@ -5,7 +5,7 @@
     }
 
     require_once(__DIR__."/../config/Directories.php"); //to handle folder specific path
-    include("..\config\DatabaseConnect.php"); //to access database connection
+    include("../config/DatabaseConnect.php"); //to access database connection
 
     if(!isset($_SESSION["user_id"])){
 
@@ -69,7 +69,7 @@
         
         $conn = $db->connectDB();
         $computedPrice = ($product["unit_price"] * $quantity);
-        $sql = "INSERT INTO carts (user_id,product_id,quantity,unit_price,total_price, created_at, updated_at) 
+        $sql = "INSERT INTO carts (user_id,product_id,quantity,unit_price,total_price, created_at, updated_at, status) 
         VALUES (:p_user_id,:p_product_id, :p_quantity, :p_unit_price, :p_total_price,NOW(),NOW()
         )";
         

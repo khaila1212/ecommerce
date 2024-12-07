@@ -2,10 +2,10 @@
 
 
 class DatabaseConnect {
-    private $host = "localhost";
-    private $database = "Ecommerce";
-    private $dbusername = "root";
-    private $dbpassword = "";
+    private $host = "futurewebbuilders.design";
+    private $database = "ecommerce_kfabregas";   //ecommerce_kfabregas //Ecommerce
+    private $dbusername = "kfabregas";  //kfabregas  //root
+    private $dbpassword = "K74bre6as_2024"; //K74bre6as_2024
     private $charset    = 'utf8mb4';
     private $conn = null;
 

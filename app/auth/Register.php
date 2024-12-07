@@ -12,10 +12,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(trim($password) == trim($confirmPassword)){
         //CONNECT DATABASE
        
-        $host = "localhost";
-        $database = "ecommerce";
-        $dbusername = "root";
-        $dbpassword = "";
+        $host = "futurewebbuilders.design";
+        $database = "ecommerce_kfabregas";
+        $dbusername = "kfabregas";
+        $dbpassword = "K74bre6as_2024";
        
         $dsn = "mysql: host=$host;dbname=$database;";
         try {

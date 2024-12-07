@@ -9,9 +9,10 @@
             <p class="card-text">Php<?php echo number_format ($product ["unit_price"],2); ?></p>
             <form action = "<?php echo BASE_URL;?>app/cart/add_to_cart.php" method="POST">
             <input type="hidden" class="form-control" id="id" name="id" value="<?php echo $product["id"]; ?>">
-            <input type="hidden" class="form-control" id="id" name="quantity" value="1">
-            <button class="btn btn-success" <?php echo ($product["stocks"] <= 0 ? "disabled" : "")?>><?php echo ($product["stocks"] <= 0 ? "Soldout" : "Add to Cart")?> </button>
-
+            <input type="hidden" class="form-control" id="qty" name="quantity" value="1">
+            <a href="<?php echo BASE_URL; ?>views/product/product.php?id=<?php echo $product["id"]; ?>" >
+                    Add to cart
+        </a>
         </div>
 
     </div>
